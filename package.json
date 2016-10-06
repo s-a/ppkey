@@ -1,6 +1,6 @@
 {
   "name": "ppkey",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create and process public and private keys.",
   "homepage": "https://github.com/s-a/ppkey",
   "author": {
