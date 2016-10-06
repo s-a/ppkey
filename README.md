@@ -13,11 +13,11 @@ $ npm install --save ppkey
 var ppkey = require('ppkey');
 var username = "deployager";
 var client = new Crypt();
-client.loadKeys({private: "c:\\temp\\key", passphrase: "deployager"});
+client.loadKeys({private: "./test/key_rsa", passphrase: "deployager"});
 var encryptedTextForHandShake = client.encrypt(username);
 
 var server = new Crypt();
-server.loadKeys({public : "c:\\temp\\key.pem"}); 
+server.loadKeys({public : "./test/key_rsa.pem"}); 
 console.log(server.verify(username, encryptedTextForHandShake));
 // yields => true 
 ```
